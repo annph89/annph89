@@ -57,36 +57,8 @@ public class Grid {
    /**
     * Return true if the turn player has won after making their move at the coordinate given
     */
-   public boolean hasWon(Player player) {
-	   /* boolean hasWon = false;
-	   for(int i = 0; i < ROWS; i++) {
-		   for(int j = 0; j < COLUMNS; j++) {
-			   if(board[i][j].content != player) {
-				   hasWon = false;
-				   break;
-			   }
-			   
-			   hasWon = true;
-		   }
-		   
-		   if(hasWon) break;
-	   }
-	   
-	   for(int i = 0; i < COLUMNS; i++) {
-		   for(int j = 0; j < ROWS; j++) {
-			   if(board[i][j].content != player) {
-				   hasWon = false;
-				   break;
-			   }
-			   
-			   hasWon = true;
-		   }
-		   
-		   if(hasWon) break;
-	   }
-	   
-	   return hasWon; */
-	   
+  public boolean hasWon(Player player) {
+
 	   
 	  return (board[currentRow][0].content == player         // 3-in-the-row
                && board[currentRow][1].content == player

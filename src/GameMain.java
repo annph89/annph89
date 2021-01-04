@@ -8,16 +8,13 @@ public class GameMain {
 	
 	private Grid grid;					// The game board
 	private boolean gameOver;			// Whether game is playing or over
-	private Player winner;				// Winner of the game
-	private Player currentPlayer;		// Current player (enum)
+	private Player winner;				
+	private Player currentPlayer;		
 	private Box row;
 	private Box col;
 	
  
-   /**
-    * Constructor
-    * Sets up the game. Creates the grid and sets the values of the variables before calling the play method.
-    */
+
    public GameMain() {
 	   // Create the grid
 	   grid = new Grid();
